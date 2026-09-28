@@ -1,0 +1,8 @@
+# pam.d/example — starter service file. Install to /etc/pam.d/<service>.
+# Docs: http://www.linux-pam.org/Linux-PAM-html/ (and `man pam.d`)
+# WARNING: a broken PAM file can lock you out. Always keep a root
+# shell open while testing, and test with `pamtester` first.
+auth     required  pam_unix.so
+account  required  pam_unix.so
+password required  pam_unix.so
+session  required  pam_unix.so
